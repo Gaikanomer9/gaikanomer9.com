@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://sounds-blog.onrender.com/"
 languageCode = "en-us"
 title = "9 Sounds of Gaika"
 theme = "pickles"
