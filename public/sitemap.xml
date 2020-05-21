@@ -3,26 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/</loc>
-    <lastmod>2020-05-21T12:05:04+02:00</lastmod>
+    <loc>https://sounds-blog.onrender.com/posts/devops1-100/</loc>
+    <lastmod>2020-05-21T12:26:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/fresh-start/</loc>
-    <lastmod>2020-05-21T12:05:04+02:00</lastmod>
+    <loc>https://sounds-blog.onrender.com/</loc>
+    <lastmod>2020-05-21T12:26:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/</loc>
-    <lastmod>2020-05-21T12:05:04+02:00</lastmod>
+    <loc>https://sounds-blog.onrender.com/posts/</loc>
+    <lastmod>2020-05-21T12:26:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://sounds-blog.onrender.com/categories/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://sounds-blog.onrender.com/tags/</loc>
   </url>
   
 </urlset>

@@ -2,22 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>9 Sounds of Gaika</title>
-    <link>http://example.org/</link>
+    <link>https://sounds-blog.onrender.com/</link>
     <description>Recent content on 9 Sounds of Gaika</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 May 2020 12:05:04 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2020 12:26:00 +0200</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sounds-blog.onrender.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Fresh Start</title>
-      <link>http://example.org/posts/fresh-start/</link>
-      <pubDate>Thu, 21 May 2020 12:05:04 +0200</pubDate>
+      <title>#100DaysOfDevOps</title>
+      <link>https://sounds-blog.onrender.com/posts/devops1-100/</link>
+      <pubDate>Thu, 21 May 2020 12:26:00 +0200</pubDate>
       
-      <guid>http://example.org/posts/fresh-start/</guid>
-      <description>Is this thing on?</description>
+      <guid>https://sounds-blog.onrender.com/posts/devops1-100/</guid>
+      <description>#100DaysOfDevOps DevOps and Cloud continue to be one of the most demanded skills in the IT market. I can see a lot of trending DevOps learning topics in Google Trends/YouTube and other platforms. At the same time amount of available educational resources is a bit overwhelming: online courses, books and special e-learning platforms.
+As I decided to renew and deepen my knowledge in DevOps and surrounding topics I started a #100DaysOfDevOps challenge where I will learn, read and pass courses about the required technologies every day.</description>
     </item>
     
   </channel>
