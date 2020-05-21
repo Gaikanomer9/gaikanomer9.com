@@ -1,6 +1,6 @@
 ---
 title: "#100DaysOfDevOps"
-date: 2020-05-21T12:26:00+02:00
+date: 2020-05-01T12:26:00+02:00
 draft: false
 ---
 
