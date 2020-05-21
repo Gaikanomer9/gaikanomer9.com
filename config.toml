@@ -1,4 +1,21 @@
 baseURL = "https://gaikanomer9.com/"
 languageCode = "en-us"
-title = "9 Sounds of Gaika"
-theme = "pickles"
+title = "Gaika's Blog"
+theme = "harbor"
+
+[outputs]
+  section = ["JSON", "HTML"]
+
+[[params.nav]]
+  identifier = "tags"
+  name = "Tags"
+  icon = "fas fa-tag fa-lg"
+  url = "tags"
+  weight = 3
+
+[[params.nav]]
+  identifier = "search"
+  name = "Search"
+  icon = "fas fa-search fa-lg"
+  url = "search"
+  weight = 3
