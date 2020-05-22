@@ -4,4 +4,7 @@ title = "Gaika's Blog"
 theme = "pickles"
 
 googleAnalytics = "UA-167304842-1"
-github = "Gaikanomer9"
+[params]
+  paginate = 10
+  custom_css = ["/css/custom.css"]
+  github = "Gaikanomer9"

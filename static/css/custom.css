@@ -1,0 +1,12 @@
+body {
+  background-color: white;
+  color: #131313;
+}
+.c-article__summary {
+  font-size: 12pt;
+  color: rgb(14, 14, 14);
+}
+
+p {
+  font-size: 13pt;
+}
