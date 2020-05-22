@@ -1,0 +1,8 @@
+body {
+  background-color: red;
+  color: red;
+}
+.c-article__summary div {
+  color: red;
+  font-size: 50;
+}

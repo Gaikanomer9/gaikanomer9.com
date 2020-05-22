@@ -1,23 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 9 Sounds of Gaika</title>
-    <link>https://sounds-blog.onrender.com/posts/</link>
-    <description>Recent content in Posts on 9 Sounds of Gaika</description>
+    <title>Posts on Gaika&#39;s Blog</title>
+    <link>https://gaikanomer9.com/posts/</link>
+    <description>Recent content in Posts on Gaika&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 May 2020 12:26:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2020 12:26:00 +0200</lastBuildDate>
     
-	<atom:link href="https://sounds-blog.onrender.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gaikanomer9.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>#100DaysOfDevOps</title>
-      <link>https://sounds-blog.onrender.com/posts/devops1-100/</link>
-      <pubDate>Thu, 21 May 2020 12:26:00 +0200</pubDate>
+      <title>#100DaysOfDevOps Update v.1</title>
+      <link>https://gaikanomer9.com/posts/devops2-100/</link>
+      <pubDate>Wed, 13 May 2020 12:26:00 +0200</pubDate>
       
-      <guid>https://sounds-blog.onrender.com/posts/devops1-100/</guid>
-      <description>#100DaysOfDevOps DevOps and Cloud continue to be one of the most demanded skills in the IT market. I can see a lot of trending DevOps learning topics in Google Trends/YouTube and other platforms. At the same time amount of available educational resources is a bit overwhelming: online courses, books and special e-learning platforms.
+      <guid>https://gaikanomer9.com/posts/devops2-100/</guid>
+      <description>11 days into the challenge and first results are here. Another Qwiklab quest about Kubernetes is done and a fantastic course about Networking from Pluralsight by Ross Bagurdes is completed. Besides that, I finished 2 books and articles about building reliable systems which I’ll cover later in separate posts.
+🏫Qwiklabs quests about Kubernetes (K8S). Qwiklabs offers a variety of quests and labs about K8S. But after completing 2 quests devoted to Kubernetes and Kubernetes in GCP I found myself in a situation where I would type some commands into the Cloud shell inside GCP without really understanding what’s going on.</description>
+    </item>
+    
+    <item>
+      <title>#100DaysOfDevOps</title>
+      <link>https://gaikanomer9.com/posts/devops1-100/</link>
+      <pubDate>Fri, 01 May 2020 12:26:00 +0200</pubDate>
+      
+      <guid>https://gaikanomer9.com/posts/devops1-100/</guid>
+      <description>DevOps and Cloud continue to be one of the most demanded skills in the IT market. I can see a lot of trending DevOps learning topics in Google Trends/YouTube and other platforms. At the same time amount of available educational resources is a bit overwhelming: online courses, books and special e-learning platforms.
 As I decided to renew and deepen my knowledge in DevOps and surrounding topics I started a #100DaysOfDevOps challenge where I will learn, read and pass courses about the required technologies every day.</description>
     </item>
     
