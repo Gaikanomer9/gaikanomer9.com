@@ -20,7 +20,7 @@ disqusShortname = "gaikanomer9"
     keywords = "blog,developer,personal"
     info = "DevOps Engineer and IT Necromancer"
     avatarURL = "images/avatar.jpeg"
-    footerContent = "Hire me if you dare"
+    footerContent = ""
 
     dateFormat = "January 2, 2006"
 
@@ -80,6 +80,7 @@ disqusShortname = "gaikanomer9"
     icon = "fa fa-medium"
     weight = 5
     url = "https://medium.com/@gaikanomer9"
+    target = "_blank"
 [[params.social]]
     name = "Habr"
     icon = "fa fa-book"
