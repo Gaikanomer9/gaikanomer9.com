@@ -16,9 +16,9 @@ disqusShortname = "gaikanomer9"
 
 [params]
     author = "Nikita Zavyalov"
-    description = "DevOps Engineer and IT Wizard"
+    description = "DevOps Engineer"
     keywords = "blog,developer,personal"
-    info = "DevOps Engineer and IT Necromancer"
+    info = "DevOps Engineer"
     avatarURL = "images/avatar.jpeg"
     footerContent = ""
 
