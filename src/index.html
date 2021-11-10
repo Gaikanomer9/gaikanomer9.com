@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>Nikita Zavyalov</title>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nikita Zavyalov</h1>
+        <p>Software Engineer.</p>
+        <div class="console-container">
+            <p class="info-console">To learn more about me and get in touch, use the console below. Type "help" to get started and press Enter</p>
+            <ul id="console-history"></ul>
+            <input id="console" type="text" spellcheck="false" autofocus placeholder="gaika9$ type here something">
+        </div>
+    </div>
+
+</body>
+<script>
+   const processor = "gaika9$ ";
+   var commands = {
+       "help": "Available commands are \
+                <br/><b>help</b> - showing this message; \
+                <br/><b>email</b> - get my email \
+                <br/><b>links</b> - get my social and dev links \
+                <br/><b>bio</b> - about myself \
+                ", 
+        "email": "You can get in touch with me via niki" + "ta" + "zavyalov95" + "\@" +"gmail" + "." + "com",
+        "links": "<br/><b>LinkedIn</b> - <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.linkedin.com/in/nikita-zavyalov-tech/\">linkedin.com/in/nikita-zavyalov-tech </a> \
+                  <br/><b>Github</b> - <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://github.com/Gaikanomer9\">github.com/Gaikanomer9 </a> \
+                  <br/><b>YouTube</b> - <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.youtube.com/channel/UCBUUvCVvpJk01_RpjIHud_g\"> youtube.com/channel/UCBUUvCVvpJk01_RpjIHud_g </a>\
+                  <br/><b>Medium Blog</b> - <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://gaikanomer9.medium.com/\"> gaikanomer9.medium.com </a>",
+        "bio": "Software Engineer since 2017. \
+                <br/> Current roles: \
+                <br/> * Founder @ amazemind.io since December 2021\
+                <br/> * Site Reliability Engineer @ trivago since November 2021\
+                <br/> * Mentor @ Backend Track — Yandex.Praktikum since October 2020\
+                <br/> --------------------------------\
+                <br/> Worked as Android Developer, Cloud Engineer, Technical Writer, Technical Account Manager, DevOps Engineer, Site Reliability Engineer. \
+                <br/>  --------------------------------\
+                <br/> Education: Computer Science bachelor at Higher School of Economics (Moscow) \
+                <br/>  --------------------------------\
+                <br/> Skillset: \
+                <br/> Programming Languages: Go, Rust, Python, Javascript (Typescript), bash \
+                <br/> Infrastructure: GCP, AWS, Linux, Networking, Kubernetes, Helm, Nomad  \
+                <br/> CI/CD: Jenkins, Github Actions, Cloud Build, ArgoCD\
+                <br/> Agile & Project Management: Scrum, Leadership, Teambuilding \
+                "
+   }
+   var input = document.querySelector('#console');
+//    input.focus(); 
+//    input.value = processor; 
+   
+   function processInputChange(e) {
+       var inputValue = e.target.value
+       if (!inputValue.startsWith(processor) || inputValue === '') {
+           e.target.value = processor + inputValue;
+       }
+   }
+   function appendHistory(value) {
+        var li = document.createElement("li");
+        li.innerHTML = value;
+        var history = document.querySelector('#console-history');
+        history.appendChild(li);
+   }
+   function processEnter(event) {
+        if (event.key === "Enter") {
+            var wasChanged = false;
+           for (var key in commands) {
+                if (event.target.value.includes(key)) {
+                    appendHistory(processor + key)
+                    appendHistory(commands[key])
+                    event.target.value = processor
+                    wasChanged = true
+                    break;
+                }
+                if (event.target.value === processor) {
+                    appendHistory(processor)
+                    event.target.value = processor
+                    wasChanged = true
+                    break;
+                }
+           }
+           if (!wasChanged){
+                appendHistory(event.target.value + " command not found");
+                appendHistory("try \"help\" command");
+                event.target.value = processor
+           }
+           var ul = document.querySelectorAll('li');
+           var history = document.querySelector('#console-history');
+           while (ul.length > 8) {
+                history.removeChild(ul[0]);
+                ul = document.querySelectorAll('li');
+           }
+           window.scrollTo(0,document.body.scrollHeight);
+          
+        }
+    }
+   input.addEventListener('input', processInputChange);
+   input.addEventListener("keyup", processEnter);
+</script>
+</html>

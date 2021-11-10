@@ -1,0 +1,19 @@
+{
+  "name": "sounds-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "html-minify": "html-minifier --input-dir src --output-dir public --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaikanomer9/sounds-blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gaikanomer9/sounds-blog/issues"
+  },
+  "homepage": "https://github.com/Gaikanomer9/sounds-blog#readme"
+}
