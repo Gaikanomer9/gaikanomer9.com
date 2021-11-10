@@ -88,7 +88,7 @@ button {
     display: none;
 }
 @media only screen and (max-device-width: 812px)  {
-    button {
+    /* button {
         background-color: #111111;
         color: green;
         border:0;
@@ -97,7 +97,7 @@ button {
         width: 100px;
         font-size: x-large;
         font-family: Arial, Helvetica, sans-serif;
-    }
+    } */
     .console-container {
         font-size:xx-large;
     }
