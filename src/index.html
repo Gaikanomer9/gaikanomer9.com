@@ -6,11 +6,14 @@
 <body>
     <div class="container">
         <h1>Nikita Zavyalov</h1>
-        <p>Software Engineer.</p>
+        <h3>Software Engineer.</h3>
         <div class="console-container">
             <p class="info-console">To learn more about me and get in touch, use the console below. Type "help" to get started and press Enter</p>
             <ul id="console-history"></ul>
-            <input id="console" type="text" spellcheck="false" autofocus placeholder="gaika9$ type here something">
+            <div id="input-placeholder">
+                <input id="console" type="text" spellcheck="false" autofocus placeholder="gaika9$ type here">
+                <button id="btn">Enter</button>
+            </div>
         </div>
     </div>
 
@@ -47,9 +50,8 @@
                 "
    }
    var input = document.querySelector('#console');
-//    input.focus(); 
-//    input.value = processor; 
-   
+   var btn = document.querySelector('#btn');
+
    function processInputChange(e) {
        var inputValue = e.target.value
        if (!inputValue.startsWith(processor) || inputValue === '') {
@@ -63,27 +65,27 @@
         history.appendChild(li);
    }
    function processEnter(event) {
-        if (event.key === "Enter") {
+        if ((event instanceof KeyboardEvent && event.key === "Enter") || (event instanceof PointerEvent)) {
             var wasChanged = false;
            for (var key in commands) {
-                if (event.target.value.includes(key)) {
+                if (input.value.toLowerCase().includes(key)) {
                     appendHistory(processor + key)
                     appendHistory(commands[key])
-                    event.target.value = processor
+                    input.value = processor
                     wasChanged = true
                     break;
                 }
-                if (event.target.value === processor) {
+                if (input.value === processor) {
                     appendHistory(processor)
-                    event.target.value = processor
+                    input.value = processor
                     wasChanged = true
                     break;
                 }
            }
            if (!wasChanged){
-                appendHistory(event.target.value + " command not found");
+                appendHistory(input.value + " command not found");
                 appendHistory("try \"help\" command");
-                event.target.value = processor
+                input.value = processor
            }
            var ul = document.querySelectorAll('li');
            var history = document.querySelector('#console-history');
@@ -92,10 +94,11 @@
                 ul = document.querySelectorAll('li');
            }
            window.scrollTo(0,document.body.scrollHeight);
-          
+           input.focus();
         }
     }
    input.addEventListener('input', processInputChange);
    input.addEventListener("keyup", processEnter);
+   btn.addEventListener("click", processEnter);
 </script>
 </html>

@@ -2,10 +2,22 @@ body {
     background-color: #333333;
     color: white;
 }
-h1 {
+h1, h3 {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 5%;
+}
+h1 {
+    font-size: xx-large;
+}
+h3 {
+    font-size: x-large;
+}
+#input-placeholder {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
 }
 ul {
     padding-inline-start: 0px;
@@ -17,26 +29,25 @@ li {
     justify-content: left;
     align-self: left;
     padding-left: 0pt;
-
-  overflow: hidden;
-  text-overflow: ellipsis;   
+    overflow: hidden;
+    text-overflow: ellipsis;   
 }
 p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size:2.5vw;
+    font-size:large;
     align-self: center;
     justify-content: center;
     
 }
 .info-console {
     color:gainsboro;
-    font-size: 2vw;
+    font-size:large;
 }
 .console-container {
     color: green;
     font-family: monospace;
     width: 80%;
-    font-size:2.5vw;
+    font-size:x-large;
 }
 a:link {
     color: salmon;
@@ -53,7 +64,7 @@ a:link {
 input {
     width: 100%;
     margin-top: 10px;
-    font-size:2.5vw;
+    font-size:x-large;
     display: flex;
     background-color: #333333;
     border: 0;
@@ -71,4 +82,31 @@ input {
     justify-content: center;
     align-items: center;
     padding: 5%;
+}
+
+button {
+    display: none;
+}
+@media (max-width: 600px) {
+    button {
+        background-color: #111111;
+        color: green;
+        border:0;
+        padding:3%;
+        display: flex;
+        width: 75px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .console-container {
+        font-size:xx-large;
+    }
+    input {
+        font-size:xx-large;
+    }
+    .info-console {
+        font-size:large;
+    }
+    p {
+        font-size:xx-large;
+    }
 }
