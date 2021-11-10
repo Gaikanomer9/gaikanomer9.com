@@ -87,14 +87,15 @@ input {
 button {
     display: none;
 }
-@media (max-width: 600px) {
+@media only screen and (max-device-width: 812px)  {
     button {
         background-color: #111111;
         color: green;
         border:0;
         padding:3%;
         display: flex;
-        width: 75px;
+        width: 100px;
+        font-size: x-large;
         font-family: Arial, Helvetica, sans-serif;
     }
     .console-container {
@@ -104,7 +105,7 @@ button {
         font-size:xx-large;
     }
     .info-console {
-        font-size:large;
+        font-size:x-large;
     }
     p {
         font-size:xx-large;
