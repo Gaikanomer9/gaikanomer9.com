@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Gaikanomer9/sounds-blog/issues"
   },
-  "homepage": "https://github.com/Gaikanomer9/sounds-blog#readme"
+  "homepage": "https://github.com/Gaikanomer9/sounds-blog#readme",
+  "dependencies": {
+    "html-minifier": "^4.0.0"
+  }
 }
